@@ -13,7 +13,7 @@ public class CashbackHackerServiceTest {
         int actual = service.remain(900);
         int expected = 100;
 
-        Assert.assertEquals(actual, expected);
+        Assert.assertEquals(expected , actual);
     }
 
     @Test
@@ -24,7 +24,7 @@ public class CashbackHackerServiceTest {
         int actual = service.remain(0);
         int expected = 1000;
 
-        Assert.assertEquals(actual, expected);
+        Assert.assertEquals(expected , actual);
     }
 
     @Test
@@ -35,7 +35,7 @@ public class CashbackHackerServiceTest {
         int actual = service.remain(1000);
         int expected = 0;
 
-        Assert.assertEquals(actual, expected);
+        Assert.assertEquals(expected , actual);
     }
 
     @Test
@@ -46,7 +46,7 @@ public class CashbackHackerServiceTest {
         int actual = service.remain(1);
         int expected = 999;
 
-        Assert.assertEquals(actual, expected);
+        Assert.assertEquals(expected , actual);
     }
     @Test
     public void ShouldCheckOverUpperBorderValue() {
@@ -56,7 +56,7 @@ public class CashbackHackerServiceTest {
         int actual = service.remain(1001);
         int expected = 999;
 
-        Assert.assertEquals(actual, expected);
+        Assert.assertEquals(expected , actual);
     }
     @Test
     public void ShouldCheckBeforeUpperBorderValue() {
@@ -66,6 +66,6 @@ public class CashbackHackerServiceTest {
         int actual = service.remain(999);
         int expected = 1;
 
-        Assert.assertEquals(actual, expected);
+        Assert.assertEquals(expected , actual);
     }
 }
